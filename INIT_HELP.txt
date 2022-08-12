@@ -1,0 +1,12 @@
+git on Infrabel network
+  git config --global http.sslVerify false
+  git config --global https.sslVerify false
+  git config --global http.proxy http://proxy:80
+  git config --global https.proxy http://proxy:80
+
+Build image from dockerfile with tag patools/alpine:latest
+  docker build . -t patools/alpine:latest
+
+Run container with interactive shell
+  docker run -i --name containername patools/alpine
+  
